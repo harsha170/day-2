@@ -1,0 +1,37 @@
+Q1. How do you copy by value a composite data type?
+when composite data is copied to a variable, only a reference to data is stored in variables memory slot the reference tells the intrepeter where actual data is kept. composite data is copied by reference. If two variables contain data that is primitive they compare by value. This means that if they both contain the same values they are equal. If two variables contain data that is composite they compare by reference. This means they can only be equal if they refer to the same object.
+Q2.why there is a difference in behavior for copying contents in primitive and non primitive type? 
+Data types that are known as primitive values in JavaScript are numbers, strings, booleans, null, undefined. Objects such as functions and arrays are referred to as non-primitive values. The fundamental difference between primitives and non-primitives is that primitives are immutable and non-primitives are mutable.
+Q3.Use typeof in all the datatypes and check the result
+    * typeof(1)= number
+    * typeof(1.1)=number
+    * typeof("1.1")=string
+    * typeof(true)=boolean
+    * typeof(null)=object
+    * typeof(undefined)=undefined
+    * typeof([])=object
+    * typeof({})=object
+Q4.Write about objects and its internal representation in Javascript
+objects in javascript mostly forms the building blocks for modern javascript. these objects are different from js primitive data types(Number, string,boolean,numm,undefined, &symbol). An object is a reference data type. object in JavaScript may be defined as unordered collection of data in the form of 'key:value'. An object can be created with curly braces {} with optional list of properties. For example: let person = { name: "Ajay", height:"6feet",age:15} in this example name, height, age are keys and ajay,6feet,15 are values of these keys.
+Q5. 15 cli commands- npm to install software
+mkdir-make a directory
+rmdir-remove a directory
+ls- list the directory
+cd pathname- change folder
+cd .. - move level up
+cp- copy a file
+mv- move file
+clear- clear CLI window
+exit- closes CLI window
+del- deletes one or more files
+--V- displays version
+dir- displays list of files
+start- starts seperate window
+sort- sorts input
+Q5What is the difference between window, screen, and document in Javascript?
+The javascript window object sits at the top of javascript object and represents the browser window. the window object is supported by all browsers. All global  javascript objects, functions, variables automatically become members of window object. The window is first thing that gets loaded into browser. The window object represents the current browsing context . It holds things like window.location, window.history, window.screen, window.status, or the window.document.
+The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. When an HTML document is loaded into a web browser , it becomes a document object. It is the root node of the HTML document. The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc. HTML documents, served with the "text/html" content type, also implement the HTMLDocument interface, whereas XML and SVG documents implement the XMLDocument interface.
+Screen is a small information object about physical screen dimensions. it can be used to display screen width,height,colordepth etc.it can be written without windows prefix.
+
+
+
